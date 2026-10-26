@@ -1,0 +1,9 @@
+Archive:  app/agent-app-leak.zip
+  Length      Date    Time    Name
+---------  ---------- -----   ----
+  6261928  05-26-2026 11:04   agent-leak-app-arm64
+      194  05-26-2026 11:04   __MACOSX/._agent-leak-app-arm64
+  6502016  05-26-2026 11:00   agent-leak-app-x86
+      194  05-26-2026 11:00   __MACOSX/._agent-leak-app-x86
+---------                     -------
+ 12764332                     4 files

@@ -1,0 +1,23 @@
+
+# 제공된 애플리케이션 바이너리 및 압축파일
+app/*.zip
+app/agent-leak-app-x86
+app/agent-leak-app-arm64
+
+# 빌드 및 실행 시 생성되는 임시 파일   
+runtime/
+app/
+
+# 실제 실행 환경변수 및 인증 파일
+.env
+.env.*
+!.env.example
+**/api_keys/
+**/secret.key
+
+# macOS 임시 파일
+.DS_Store
+__MACOSX/
+
+
+

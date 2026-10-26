@@ -1,0 +1,40 @@
+b4-2-agent  | 2026-10-26T02:20:07.015432288Z    ... Running as service user 'agent' (uid=1000)
+b4-2-agent  | 2026-10-26T02:20:07.015436316Z [2/6] Verifying Environment Variables     [OK]
+b4-2-agent  | 2026-10-26T02:20:07.015439660Z    ... All required Envs correct
+b4-2-agent  | 2026-10-26T02:20:07.015442964Z [3/6] Checking Required Files             [OK]
+b4-2-agent  | 2026-10-26T02:20:07.015446233Z    ... Verified 'secret.key' with correct key string.
+b4-2-agent  | 2026-10-26T02:20:07.015449440Z [4/6] Checking Port Availability          [OK]
+b4-2-agent  | 2026-10-26T02:20:07.015452722Z    ... Port 15034 is available.
+b4-2-agent  | 2026-10-26T02:20:07.015455915Z [5/6] Verifying Log Permission            [OK]
+b4-2-agent  | 2026-10-26T02:20:07.015459083Z    ... Log directory is writable: /home/agent/agent-app/logs
+b4-2-agent  | 2026-10-26T02:20:07.015462288Z [6/6] Verifying Mission Environment       [OK]
+b4-2-agent  | 2026-10-26T02:20:07.015465625Z    ... MEMORY_LIMIT=256MB, CPU_MAX_OCCUPY=80%, MULTI_THREAD_ENABLE=False
+b4-2-agent  | 2026-10-26T02:20:07.015468939Z ------------------------------------------------------------
+b4-2-agent  | 2026-10-26T02:20:07.015472222Z All Boot Checks Passed!
+b4-2-agent  | 2026-10-26T02:20:07.015475437Z Agent READY
+b4-2-agent  | 2026-10-26T02:20:07.015478686Z 2026-10-26 02:20:07,014 [INFO] [SafetyGuard] Process priority lowered (nice=10).
+b4-2-agent  | 2026-10-26T02:20:07.015482075Z 2026-10-26 02:20:07,014 [INFO] Agent listening at port 15034
+b4-2-agent  | 2026-10-26T02:20:09.064176015Z 
+b4-2-agent  | 2026-10-26T02:20:09.064192086Z ==================================================
+b4-2-agent  | 2026-10-26T02:20:09.064194401Z  [ Agent Initiate ] Resource Check 
+b4-2-agent  | 2026-10-26T02:20:09.064196218Z ==================================================
+b4-2-agent  | 2026-10-26T02:20:09.064197897Z  [ MEMORY ] Limit: 256MB 		[ WARNING: Recommend Over 256MB ]
+b4-2-agent  | 2026-10-26T02:20:09.064199853Z  [ CPU    ] Limit: 80%  		[ WARNING: Recommend Under 50% ]
+b4-2-agent  | 2026-10-26T02:20:09.064201621Z  [ THREAD ] Concurrency: False 		[ OK ]
+b4-2-agent  | 2026-10-26T02:20:09.064203312Z --------------------------------------------------
+b4-2-agent  | 2026-10-26T02:20:09.064205030Z  >>> SYSTEM STATUS: STABLE. STARTING WORKLOAD MONITORING...
+b4-2-agent  | 2026-10-26T02:20:09.064206959Z ==================================================
+b4-2-agent  | 2026-10-26T02:20:09.064208682Z 
+b4-2-agent  | 2026-10-26T02:20:09.064210343Z 2026-10-26 02:20:09,063 [INFO] [MemoryWorker] Current Heap: 25MB
+b4-2-agent  | 2026-10-26T02:20:12.118664317Z 2026-10-26 02:20:12,118 [INFO] [MemoryWorker] Current Heap: 50MB
+b4-2-agent  | 2026-10-26T02:20:15.174438127Z 2026-10-26 02:20:15,174 [INFO] [MemoryWorker] Current Heap: 75MB
+b4-2-agent  | 2026-10-26T02:20:18.228260109Z 2026-10-26 02:20:18,227 [INFO] [MemoryWorker] Current Heap: 100MB
+b4-2-agent  | 2026-10-26T02:20:21.285705594Z 2026-10-26 02:20:21,285 [INFO] [MemoryWorker] Current Heap: 125MB
+b4-2-agent  | 2026-10-26T02:20:24.343110396Z 2026-10-26 02:20:24,342 [INFO] [MemoryWorker] Current Heap: 150MB
+b4-2-agent  | 2026-10-26T02:20:27.401339159Z 2026-10-26 02:20:27,400 [INFO] [MemoryWorker] Current Heap: 175MB
+b4-2-agent  | 2026-10-26T02:20:30.455380537Z 2026-10-26 02:20:30,454 [INFO] [MemoryWorker] Current Heap: 200MB
+b4-2-agent  | 2026-10-26T02:20:33.513023273Z 2026-10-26 02:20:33,512 [INFO] [MemoryWorker] Current Heap: 225MB
+b4-2-agent  | 2026-10-26T02:20:36.558913393Z 2026-10-26 02:20:36,558 [INFO] [MemoryWorker] Current Heap: 250MB
+b4-2-agent  | 2026-10-26T02:20:39.616254096Z 2026-10-26 02:20:39,615 [INFO] [MemoryWorker] Current Heap: 275MB
+b4-2-agent  | 2026-10-26T02:20:39.616392427Z 2026-10-26 02:20:39,616 [CRITICAL] [MemoryGuard] Memory limit exceeded (275MB >= 256MB) / (Recommend Over 256MB)
+b4-2-agent  | 2026-10-26T02:20:39.616571249Z 2026-10-26 02:20:39,616 [CRITICAL] [MemoryGuard] Self-terminating process 7 to prevent system instability.

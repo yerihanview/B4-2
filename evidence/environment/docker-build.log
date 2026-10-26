@@ -1,0 +1,67 @@
+ Image b4-2-agent:local Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 519B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile:
+#2 transferring dockerfile: 759B done
+#2 DONE 0.2s
+
+#3 [internal] load metadata for docker.io/library/ubuntu:22.04
+#3 DONE 2.3s
+
+#4 [internal] load .dockerignore
+#4 transferring context:
+#4 transferring context: 2B done
+#4 DONE 0.2s
+
+#5 [1/6] FROM docker.io/library/ubuntu:22.04@sha256:0a9887931b0e38af2e3487ed39e29436b0535c4f3f52e57745baaf79d1898956
+#5 resolve docker.io/library/ubuntu:22.04@sha256:0a9887931b0e38af2e3487ed39e29436b0535c4f3f52e57745baaf79d1898956 0.1s done
+#5 DONE 0.3s
+
+#6 [internal] load build context
+#6 transferring context: 6.50MB 0.1s done
+#6 DONE 0.3s
+
+#5 [1/6] FROM docker.io/library/ubuntu:22.04@sha256:0a9887931b0e38af2e3487ed39e29436b0535c4f3f52e57745baaf79d1898956
+#5 sha256:cf1a5487baaf7d71eb78fd0888933c6cdecb40e59edb896511aa0ef4a896031e 0B / 29.75MB 0.2s
+#5 sha256:cf1a5487baaf7d71eb78fd0888933c6cdecb40e59edb896511aa0ef4a896031e 4.19MB / 29.75MB 0.3s
+#5 sha256:cf1a5487baaf7d71eb78fd0888933c6cdecb40e59edb896511aa0ef4a896031e 18.36MB / 29.75MB 0.5s
+#5 sha256:cf1a5487baaf7d71eb78fd0888933c6cdecb40e59edb896511aa0ef4a896031e 29.75MB / 29.75MB 0.6s
+#5 sha256:cf1a5487baaf7d71eb78fd0888933c6cdecb40e59edb896511aa0ef4a896031e 29.75MB / 29.75MB 0.7s done
+#5 extracting sha256:cf1a5487baaf7d71eb78fd0888933c6cdecb40e59edb896511aa0ef4a896031e
+#5 extracting sha256:cf1a5487baaf7d71eb78fd0888933c6cdecb40e59edb896511aa0ef4a896031e 0.8s done
+#5 DONE 1.8s
+
+#7 [2/6] RUN useradd --create-home --shell /bin/bash agent
+#7 DONE 0.5s
+
+#8 [3/6] RUN mkdir -p     /home/agent/agent-app/upload_files     /home/agent/agent-app/api_keys     /home/agent/agent-app/logs     && chown -R agent:agent /home/agent
+#8 DONE 0.4s
+
+#9 [4/6] COPY --chown=agent:agent app/agent-leak-app-x86 /home/agent/agent-app/agent-leak-app
+#9 DONE 0.3s
+
+#10 [5/6] RUN chmod 750 /home/agent/agent-app/agent-leak-app
+#10 DONE 0.4s
+
+#11 [6/6] WORKDIR /home/agent/agent-app
+#11 DONE 0.3s
+
+#12 exporting to image
+#12 exporting layers
+#12 exporting layers 1.2s done
+#12 exporting manifest sha256:a2d8660547fb1bb98a34ae6c628d95a399221d56012d07f8c1c168fbee1a19eb 0.0s done
+#12 exporting config sha256:cc02c3df3202c033a4da30f1d6462e11c634c6fde8fd495ed9d6a710a193231b 0.1s done
+#12 exporting attestation manifest sha256:16af6be75a42243f8a0d9fd535a3094f51041d73bf399867849f32a87934273a 0.1s done
+#12 exporting manifest list sha256:e922b09d1ad26e18f9de513e6c212748bc86c7792c22a5cd56ba6a645c8b7b3a
+#12 exporting manifest list sha256:e922b09d1ad26e18f9de513e6c212748bc86c7792c22a5cd56ba6a645c8b7b3a 0.0s done
+#12 naming to docker.io/library/b4-2-agent:local 0.0s done
+#12 unpacking to docker.io/library/b4-2-agent:local
+#12 unpacking to docker.io/library/b4-2-agent:local 0.5s done
+#12 DONE 2.0s
+
+#13 resolving provenance for metadata file
+#13 DONE 0.0s
+ Image b4-2-agent:local Built 
