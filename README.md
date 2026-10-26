@@ -4,6 +4,20 @@
 
 Docker에서 제공된 `agent-leak-app`을 실행하고, Linux 프로세스·스레드 상태와 애플리케이션 로그를 함께 관측하여 **Memory/OOM, CPU Latency, Deadlock** 세 장애를 분석했습니다. 장애별 Before/After 비교, 근거, 조치 및 검증 한계는 GitHub Issues에 기록했습니다.
 
+## 요약
+### Memory/OOM 장애 시각화
+
+![Memory/OOM 장애 분석](docs/images/memory-oom.png)
+
+### CPU Latency 장애 시각화
+
+![CPU Latency 장애 분석](docs/images/cpu-latency.png)
+
+### Deadlock 장애 시각화
+
+![Deadlock 장애 분석](docs/images/deadlock.png)
+
+
 ## 분석 보고서
 
 | 장애 | Before 관측 | After 조치 및 관측 | 상세 보고서 |
