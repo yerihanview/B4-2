@@ -1,0 +1,38 @@
+b4-2-agent  | 2026-10-26T04:01:59.672271102Z >>> Starting Agent Boot Sequence...
+b4-2-agent  | 2026-10-26T04:01:59.672291497Z [1/6] Checking User Account               [OK]
+b4-2-agent  | 2026-10-26T04:01:59.672298978Z    ... Running as service user 'agent' (uid=1000)
+b4-2-agent  | 2026-10-26T04:01:59.672300984Z [2/6] Verifying Environment Variables     [OK]
+b4-2-agent  | 2026-10-26T04:01:59.672302649Z    ... All required Envs correct
+b4-2-agent  | 2026-10-26T04:01:59.672304305Z [3/6] Checking Required Files             [OK]
+b4-2-agent  | 2026-10-26T04:01:59.672305920Z    ... Verified 'secret.key' with correct key string.
+b4-2-agent  | 2026-10-26T04:01:59.672307592Z [4/6] Checking Port Availability          [OK]
+b4-2-agent  | 2026-10-26T04:01:59.672309223Z    ... Port 15034 is available.
+b4-2-agent  | 2026-10-26T04:01:59.672310856Z [5/6] Verifying Log Permission            [OK]
+b4-2-agent  | 2026-10-26T04:01:59.672312487Z    ... Log directory is writable: /home/agent/agent-app/logs
+b4-2-agent  | 2026-10-26T04:01:59.672314132Z [6/6] Verifying Mission Environment       [OK]
+b4-2-agent  | 2026-10-26T04:01:59.672315796Z    ... MEMORY_LIMIT=512MB, CPU_MAX_OCCUPY=80%, MULTI_THREAD_ENABLE=False
+b4-2-agent  | 2026-10-26T04:01:59.672317487Z ------------------------------------------------------------
+b4-2-agent  | 2026-10-26T04:01:59.672319150Z All Boot Checks Passed!
+b4-2-agent  | 2026-10-26T04:01:59.672320997Z Agent READY
+b4-2-agent  | 2026-10-26T04:01:59.672322678Z 2026-10-26 04:01:59,671 [INFO] [SafetyGuard] Process priority lowered (nice=10).
+b4-2-agent  | 2026-10-26T04:01:59.672585506Z 2026-10-26 04:01:59,672 [INFO] Agent listening at port 15034
+b4-2-agent  | 2026-10-26T04:02:01.685021833Z 
+b4-2-agent  | 2026-10-26T04:02:01.685047061Z ==================================================
+b4-2-agent  | 2026-10-26T04:02:01.685051567Z  [ Agent Initiate ] Resource Check 
+b4-2-agent  | 2026-10-26T04:02:01.685055155Z ==================================================
+b4-2-agent  | 2026-10-26T04:02:01.685058523Z  [ MEMORY ] Limit: 512MB 		[ OK ]
+b4-2-agent  | 2026-10-26T04:02:01.685062188Z  [ CPU    ] Limit: 80%  		[ WARNING: Recommend Under 50% ]
+b4-2-agent  | 2026-10-26T04:02:01.685065662Z  [ THREAD ] Concurrency: False 		[ OK ]
+b4-2-agent  | 2026-10-26T04:02:01.685068948Z --------------------------------------------------
+b4-2-agent  | 2026-10-26T04:02:01.685072222Z  >>> SYSTEM STATUS: STABLE. STARTING WORKLOAD MONITORING...
+b4-2-agent  | 2026-10-26T04:02:01.685075777Z ==================================================
+b4-2-agent  | 2026-10-26T04:02:01.685079066Z 
+b4-2-agent  | 2026-10-26T04:02:01.685082176Z 2026-10-26 04:02:01,683 [INFO] [CpuWorker] Started. Maximum CPU Limit: 80%
+b4-2-agent  | 2026-10-26T04:02:01.685085614Z 2026-10-26 04:02:01,683 [INFO] [CpuWorker] Current Load: 5.00%
+b4-2-agent  | 2026-10-26T04:02:04.803390577Z 2026-10-26 04:02:04,802 [INFO] [CpuWorker] Current Load: 14.47%
+b4-2-agent  | 2026-10-26T04:02:07.923561182Z 2026-10-26 04:02:07,922 [INFO] [CpuWorker] Current Load: 21.44%
+b4-2-agent  | 2026-10-26T04:02:11.045014771Z 2026-10-26 04:02:11,044 [INFO] [CpuWorker] Current Load: 26.97%
+b4-2-agent  | 2026-10-26T04:02:14.162989244Z 2026-10-26 04:02:14,162 [INFO] [CpuWorker] Current Load: 35.37%
+b4-2-agent  | 2026-10-26T04:02:17.280986478Z 2026-10-26 04:02:17,279 [INFO] [CpuWorker] Current Load: 43.32%
+b4-2-agent  | 2026-10-26T04:02:20.397093173Z 2026-10-26 04:02:20,396 [INFO] [CpuWorker] Current Load: 51.82%
+b4-2-agent  | 2026-10-26T04:02:20.498440729Z 2026-10-26 04:02:20,497 [CRITICAL] [CpuWorker] CPU Threshold Violated! (51.82000000000001%).

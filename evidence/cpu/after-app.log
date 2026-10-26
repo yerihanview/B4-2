@@ -1,0 +1,106 @@
+b4-2-agent  | 2026-10-26T04:10:59.881915955Z >>> Starting Agent Boot Sequence...
+b4-2-agent  | 2026-10-26T04:10:59.881933033Z [1/6] Checking User Account               [OK]
+b4-2-agent  | 2026-10-26T04:10:59.881940090Z    ... Running as service user 'agent' (uid=1000)
+b4-2-agent  | 2026-10-26T04:10:59.881942217Z [2/6] Verifying Environment Variables     [OK]
+b4-2-agent  | 2026-10-26T04:10:59.881943883Z    ... All required Envs correct
+b4-2-agent  | 2026-10-26T04:10:59.881945501Z [3/6] Checking Required Files             [OK]
+b4-2-agent  | 2026-10-26T04:10:59.881947163Z    ... Verified 'secret.key' with correct key string.
+b4-2-agent  | 2026-10-26T04:10:59.881948797Z [4/6] Checking Port Availability          [OK]
+b4-2-agent  | 2026-10-26T04:10:59.881950450Z    ... Port 15034 is available.
+b4-2-agent  | 2026-10-26T04:10:59.881952082Z [5/6] Verifying Log Permission            [OK]
+b4-2-agent  | 2026-10-26T04:10:59.881953726Z    ... Log directory is writable: /home/agent/agent-app/logs
+b4-2-agent  | 2026-10-26T04:10:59.881955376Z [6/6] Verifying Mission Environment       [OK]
+b4-2-agent  | 2026-10-26T04:10:59.881957021Z    ... MEMORY_LIMIT=512MB, CPU_MAX_OCCUPY=40%, MULTI_THREAD_ENABLE=False
+b4-2-agent  | 2026-10-26T04:10:59.881958703Z ------------------------------------------------------------
+b4-2-agent  | 2026-10-26T04:10:59.881960373Z All Boot Checks Passed!
+b4-2-agent  | 2026-10-26T04:10:59.881962025Z Agent READY
+b4-2-agent  | 2026-10-26T04:10:59.881963723Z 2026-10-26 04:10:59,881 [INFO] [SafetyGuard] Process priority lowered (nice=10).
+b4-2-agent  | 2026-10-26T04:10:59.882080054Z 2026-10-26 04:10:59,881 [INFO] Agent listening at port 15034
+b4-2-agent  | 2026-10-26T04:11:01.894152477Z 
+b4-2-agent  | 2026-10-26T04:11:01.894177869Z ==================================================
+b4-2-agent  | 2026-10-26T04:11:01.894182397Z  [ Agent Initiate ] Resource Check 
+b4-2-agent  | 2026-10-26T04:11:01.894185876Z ==================================================
+b4-2-agent  | 2026-10-26T04:11:01.894189127Z  [ MEMORY ] Limit: 512MB 		[ OK ]
+b4-2-agent  | 2026-10-26T04:11:01.894192729Z  [ CPU    ] Limit: 40%  		[ OK ]
+b4-2-agent  | 2026-10-26T04:11:01.894196045Z  [ THREAD ] Concurrency: False 		[ OK ]
+b4-2-agent  | 2026-10-26T04:11:01.894199258Z --------------------------------------------------
+b4-2-agent  | 2026-10-26T04:11:01.894202484Z  >>> SYSTEM STATUS: STABLE. STARTING WORKLOAD MONITORING...
+b4-2-agent  | 2026-10-26T04:11:01.894205871Z ==================================================
+b4-2-agent  | 2026-10-26T04:11:01.894209158Z 
+b4-2-agent  | 2026-10-26T04:11:01.894212402Z 2026-10-26 04:11:01,892 [INFO] >>> Scenario Selected: [Healthy System Monitoring]
+b4-2-agent  | 2026-10-26T04:11:01.894215888Z 
+b4-2-agent  | 2026-10-26T04:11:01.894219001Z >>> [SYSTEM] ALL CONFIGURATIONS OPTIMAL. RUNNING STABILITY TEST... <<<
+b4-2-agent  | 2026-10-26T04:11:01.894222552Z 
+b4-2-agent  | 2026-10-26T04:11:01.894225614Z 2026-10-26 04:11:01,893 [INFO] [Scheduler] Task Scheduler Initialized.
+b4-2-agent  | 2026-10-26T04:11:01.894228990Z 2026-10-26 04:11:01,893 [INFO] [Scheduler] Registered Tasks: ['Thread-A', 'Thread-B', 'Thread-C']
+b4-2-agent  | 2026-10-26T04:11:01.894300736Z 2026-10-26 04:11:01,894 [INFO] [Scheduler] Starting task execution...
+b4-2-agent  | 2026-10-26T04:11:01.894686965Z 2026-10-26 04:11:01,894 [INFO] [Thread-A] Task Started. Calculating... (20%)
+b4-2-agent  | 2026-10-26T04:11:01.946233273Z 2026-10-26 04:11:01,945 [INFO] [Thread-A] Calculating... (40%)
+b4-2-agent  | 2026-10-26T04:11:01.997255697Z 2026-10-26 04:11:01,996 [INFO] [Thread-A] Calculating... (60%)
+b4-2-agent  | 2026-10-26T04:11:02.049423499Z 2026-10-26 04:11:02,048 [INFO] [Thread-A] Calculating... (80%)
+b4-2-agent  | 2026-10-26T04:11:02.100816453Z 2026-10-26 04:11:02,100 [INFO] [Thread-A] Task Completed. (100%)
+b4-2-agent  | 2026-10-26T04:11:02.151796498Z 2026-10-26 04:11:02,151 [INFO] [Thread-B] Task Started. Calculating... (20%)
+b4-2-agent  | 2026-10-26T04:11:02.203555787Z 2026-10-26 04:11:02,203 [INFO] [Thread-B] Calculating... (40%)
+b4-2-agent  | 2026-10-26T04:11:02.255563036Z 2026-10-26 04:11:02,255 [INFO] [Thread-B] Calculating... (60%)
+b4-2-agent  | 2026-10-26T04:11:02.307561707Z 2026-10-26 04:11:02,307 [INFO] [Thread-B] Calculating... (80%)
+b4-2-agent  | 2026-10-26T04:11:02.358474157Z 2026-10-26 04:11:02,357 [INFO] [Thread-B] Task Completed. (100%)
+b4-2-agent  | 2026-10-26T04:11:02.408761695Z 2026-10-26 04:11:02,408 [INFO] [Thread-C] Task Started. Calculating... (20%)
+b4-2-agent  | 2026-10-26T04:11:02.459585432Z 2026-10-26 04:11:02,459 [INFO] [Thread-C] Calculating... (40%)
+b4-2-agent  | 2026-10-26T04:11:02.510226043Z 2026-10-26 04:11:02,509 [INFO] [Thread-C] Calculating... (60%)
+b4-2-agent  | 2026-10-26T04:11:02.561991654Z 2026-10-26 04:11:02,561 [INFO] [Thread-C] Calculating... (80%)
+b4-2-agent  | 2026-10-26T04:11:02.613440914Z 2026-10-26 04:11:02,612 [INFO] [Thread-C] Task Completed. (100%)
+b4-2-agent  | 2026-10-26T04:11:02.664693166Z 2026-10-26 04:11:02,663 [INFO] [Scheduler] All tasks completed.
+b4-2-agent  | 2026-10-26T04:11:02.701525586Z 2026-10-26 04:11:02,701 [INFO] [MemoryWorker] Current Heap: 25MB
+b4-2-agent  | 2026-10-26T04:11:02.701710109Z 2026-10-26 04:11:02,701 [INFO] [CpuWorker] Started. Maximum CPU Limit: 40%
+b4-2-agent  | 2026-10-26T04:11:02.701748040Z 2026-10-26 04:11:02,701 [INFO] [CpuWorker] Current Load: 5.00%
+b4-2-agent  | 2026-10-26T04:11:05.755767739Z 2026-10-26 04:11:05,755 [INFO] [MemoryWorker] Current Heap: 50MB
+b4-2-agent  | 2026-10-26T04:11:05.821089059Z 2026-10-26 04:11:05,820 [INFO] [CpuWorker] Current Load: 8.61%
+b4-2-agent  | 2026-10-26T04:11:08.807865005Z 2026-10-26 04:11:08,807 [INFO] [MemoryWorker] Current Heap: 75MB
+b4-2-agent  | 2026-10-26T04:11:08.942029197Z 2026-10-26 04:11:08,940 [INFO] [CpuWorker] Current Load: 14.05%
+b4-2-agent  | 2026-10-26T04:11:11.859704972Z 2026-10-26 04:11:11,859 [INFO] [MemoryWorker] Current Heap: 100MB
+b4-2-agent  | 2026-10-26T04:11:12.062048248Z 2026-10-26 04:11:12,060 [INFO] [CpuWorker] Current Load: 19.33%
+b4-2-agent  | 2026-10-26T04:11:14.911624788Z 2026-10-26 04:11:14,911 [INFO] [MemoryWorker] Current Heap: 125MB
+b4-2-agent  | 2026-10-26T04:11:15.181622976Z 2026-10-26 04:11:15,181 [INFO] [CpuWorker] Current Load: 20.52%
+b4-2-agent  | 2026-10-26T04:11:17.964416470Z 2026-10-26 04:11:17,964 [INFO] [MemoryWorker] Current Heap: 150MB
+b4-2-agent  | 2026-10-26T04:11:18.302974720Z 2026-10-26 04:11:18,302 [INFO] [CpuWorker] Current Load: 21.81%
+b4-2-agent  | 2026-10-26T04:11:21.017849344Z 2026-10-26 04:11:21,017 [INFO] [MemoryWorker] Current Heap: 175MB
+b4-2-agent  | 2026-10-26T04:11:21.424019288Z 2026-10-26 04:11:21,422 [INFO] [CpuWorker] Current Load: 28.48%
+b4-2-agent  | 2026-10-26T04:11:24.073068313Z 2026-10-26 04:11:24,072 [INFO] [MemoryWorker] Current Heap: 200MB
+b4-2-agent  | 2026-10-26T04:11:24.544053037Z 2026-10-26 04:11:24,542 [INFO] [CpuWorker] Current Load: 34.57%
+b4-2-agent  | 2026-10-26T04:11:26.656064111Z 2026-10-26 04:11:26,655 [INFO] [CpuWorker] Peak reached (40.00%). Starting cooldown...
+b4-2-agent  | 2026-10-26T04:11:27.128098778Z 2026-10-26 04:11:27,127 [INFO] [MemoryWorker] Current Heap: 225MB
+b4-2-agent  | 2026-10-26T04:11:27.662699279Z 2026-10-26 04:11:27,662 [INFO] [CpuWorker] Current Load: 40.00%
+b4-2-agent  | 2026-10-26T04:11:30.181039036Z 2026-10-26 04:11:30,180 [INFO] [MemoryWorker] Current Heap: 250MB
+b4-2-agent  | 2026-10-26T04:11:30.781956322Z 2026-10-26 04:11:30,781 [INFO] [CpuWorker] Current Load: 31.46%
+b4-2-agent  | 2026-10-26T04:11:33.233478349Z 2026-10-26 04:11:33,233 [INFO] [MemoryWorker] Current Heap: 275MB
+b4-2-agent  | 2026-10-26T04:11:33.902072098Z 2026-10-26 04:11:33,900 [INFO] [CpuWorker] Current Load: 28.49%
+b4-2-agent  | 2026-10-26T04:11:36.284228808Z 2026-10-26 04:11:36,283 [INFO] [MemoryWorker] Current Heap: 300MB
+b4-2-agent  | 2026-10-26T04:11:37.024081790Z 2026-10-26 04:11:37,022 [INFO] [CpuWorker] Current Load: 27.53%
+b4-2-agent  | 2026-10-26T04:11:39.339320178Z 2026-10-26 04:11:39,338 [INFO] [MemoryWorker] Current Heap: 325MB
+b4-2-agent  | 2026-10-26T04:11:40.144097654Z 2026-10-26 04:11:40,142 [INFO] [CpuWorker] Current Load: 25.02%
+b4-2-agent  | 2026-10-26T04:11:42.391665227Z 2026-10-26 04:11:42,391 [INFO] [MemoryWorker] Current Heap: 350MB
+b4-2-agent  | 2026-10-26T04:11:43.264031907Z 2026-10-26 04:11:43,262 [INFO] [CpuWorker] Current Load: 22.56%
+b4-2-agent  | 2026-10-26T04:11:45.446695490Z 2026-10-26 04:11:45,446 [INFO] [MemoryWorker] Current Heap: 375MB
+b4-2-agent  | 2026-10-26T04:11:46.384043749Z 2026-10-26 04:11:46,382 [INFO] [CpuWorker] Current Load: 21.20%
+b4-2-agent  | 2026-10-26T04:11:48.499345999Z 2026-10-26 04:11:48,498 [INFO] [MemoryWorker] Current Heap: 400MB
+b4-2-agent  | 2026-10-26T04:11:49.507051730Z 2026-10-26 04:11:49,505 [INFO] [CpuWorker] Current Load: 13.10%
+b4-2-agent  | 2026-10-26T04:11:51.544429800Z 2026-10-26 04:11:51,544 [INFO] [MemoryWorker] Current Heap: 425MB
+b4-2-agent  | 2026-10-26T04:11:52.624290120Z 2026-10-26 04:11:52,623 [INFO] [CpuWorker] Current Load: 11.31%
+b4-2-agent  | 2026-10-26T04:11:54.567300455Z 2026-10-26 04:11:54,566 [INFO] [MemoryWorker] Current Heap: 450MB
+b4-2-agent  | 2026-10-26T04:11:55.743982465Z 2026-10-26 04:11:55,743 [INFO] [CpuWorker] Current Load: 10.15%
+b4-2-agent  | 2026-10-26T04:11:57.591430409Z 2026-10-26 04:11:57,591 [INFO] [MemoryWorker] Current Heap: 475MB
+b4-2-agent  | 2026-10-26T04:11:57.858336830Z 2026-10-26 04:11:57,857 [INFO] [CpuWorker] Cooldown complete (5.00%). Resuming load increase...
+b4-2-agent  | 2026-10-26T04:11:58.865972485Z 2026-10-26 04:11:58,865 [INFO] [CpuWorker] Current Load: 5.00%
+b4-2-agent  | 2026-10-26T04:12:00.636196004Z 2026-10-26 04:12:00,635 [INFO] [MemoryWorker] Current Heap: 500MB
+b4-2-agent  | 2026-10-26T04:12:01.986036721Z 2026-10-26 04:12:01,984 [INFO] [CpuWorker] Current Load: 6.56%
+b4-2-agent  | 2026-10-26T04:12:03.657064711Z 2026-10-26 04:12:03,656 [INFO] [MemoryWorker] Current Heap: 525MB
+b4-2-agent  | 2026-10-26T04:12:03.660495853Z 2026-10-26 04:12:03,660 [WARNING] [MemoryWorker] Memory Usage Reached Limit (525MB). Starting cleanup...
+b4-2-agent  | 2026-10-26T04:12:03.670523796Z 2026-10-26 04:12:03,670 [INFO] [System] Memory Cache Flushed. Process Stabilized.
+b4-2-agent  | 2026-10-26T04:12:05.107054007Z 
+b4-2-agent  | 2026-10-26T04:12:05.107095374Z >>> [SYSTEM] MEMORY RECOVERED (Cache Cleared) <<<
+b4-2-agent  | 2026-10-26T04:12:05.107100594Z 
+b4-2-agent  | 2026-10-26T04:12:05.107138254Z 2026-10-26 04:12:05,105 [INFO] [CpuWorker] Current Load: 7.60%
+b4-2-agent  | 2026-10-26T04:12:08.226913526Z 2026-10-26 04:12:08,225 [INFO] [CpuWorker] Current Load: 9.18%
+b4-2-agent  | 2026-10-26T04:12:08.730238925Z 2026-10-26 04:12:08,729 [INFO] [MemoryWorker] Current Heap: 25MB
+b4-2-agent  | 2026-10-26T04:12:11.347052628Z 2026-10-26 04:12:11,345 [INFO] [CpuWorker] Current Load: 9.27%
+b4-2-agent  | 2026-10-26T04:12:11.785798355Z 2026-10-26 04:12:11,785 [INFO] [MemoryWorker] Current Heap: 50MB
