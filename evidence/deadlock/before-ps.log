@@ -1,0 +1,42 @@
+2026-10-26 15:24:41
+    PID     TID STAT %CPU   RSS WCHAN
+      6       6 S     0.2  2128 do_wait
+    PID     TID STAT %CPU   RSS WCHAN
+      7       7 SNl   0.1 18252 futex_wait
+      7       8 SNl   0.0 18252 futex_wait
+      7       9 SNl   0.0 18252 futex_wait
+2026-10-26 15:24:46
+    PID     TID STAT %CPU   RSS WCHAN
+      6       6 S     0.2  2128 do_wait
+    PID     TID STAT %CPU   RSS WCHAN
+      7       7 SNl   0.1 18252 futex_wait
+      7       8 SNl   0.0 18252 futex_wait
+      7       9 SNl   0.0 18252 futex_wait
+2026-10-26 15:24:51
+    PID     TID STAT %CPU   RSS WCHAN
+      6       6 S     0.1  2128 do_wait
+    PID     TID STAT %CPU   RSS WCHAN
+      7       7 SNl   0.1 18252 futex_wait
+      7       8 SNl   0.0 18252 futex_wait
+      7       9 SNl   0.0 18252 futex_wait
+2026-10-26 15:24:56
+    PID     TID STAT %CPU   RSS WCHAN
+      6       6 S     0.1  2128 do_wait
+    PID     TID STAT %CPU   RSS WCHAN
+      7       7 SNl   0.0 18252 futex_wait
+      7       8 SNl   0.0 18252 futex_wait
+      7       9 SNl   0.0 18252 futex_wait
+2026-10-26 15:25:01
+    PID     TID STAT %CPU   RSS WCHAN
+      6       6 S     0.1  2128 do_wait
+    PID     TID STAT %CPU   RSS WCHAN
+      7       7 SNl   0.0 18252 futex_wait
+      7       8 SNl   0.0 18252 futex_wait
+      7       9 SNl   0.0 18252 futex_wait
+2026-10-26 15:25:06
+    PID     TID STAT %CPU   RSS WCHAN
+      6       6 S     0.1  2128 do_wait
+    PID     TID STAT %CPU   RSS WCHAN
+      7       7 SNl   0.0 18252 futex_wait
+      7       8 SNl   0.0 18252 futex_wait
+      7       9 SNl   0.0 18252 futex_wait
