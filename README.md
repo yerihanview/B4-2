@@ -1,19 +1,19 @@
 # B4-2 — Linux 프로세스 장애 분석
 
-코디세이 B4-2 미션 「컴퓨터가 갑자기 느려지거나 멈췄을 때 원인 찾아 고치기」의 실험 및 분석 결과를 정리한 저장소입니다.
+코디세이 B4-2 미션 **컴퓨터가 갑자기 느려지거나 멈췄을 때 원인 찾아 고치기**의 실험 및 분석 결과를 정리한 저장소입니다.
 
 Docker에서 제공된 `agent-leak-app`을 실행하고, Linux 프로세스·스레드 상태와 애플리케이션 로그를 함께 관측하여 **Memory/OOM, CPU Latency, Deadlock** 세 장애를 분석했습니다. 장애별 Before/After 비교, 근거, 조치 및 검증 한계는 GitHub Issues에 기록했습니다.
 
 ## 요약
-### Memory/OOM 장애 시각화
+### 1. Memory/OOM 장애 분석
 
 ![Memory/OOM 장애 분석](docs/images/memory-oom.png)
 
-### CPU Latency 장애 시각화
+### 2. CPU Latency 장애 분석
 
 ![CPU Latency 장애 분석](docs/images/cpu-latency.png)
 
-### Deadlock 장애 시각화
+### 3. Deadlock 장애 분석
 
 ![Deadlock 장애 분석](docs/images/deadlock.png)
 
